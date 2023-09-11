@@ -48,7 +48,10 @@
 </header>
 <!--================Header Menu Area =================-->
 
-<main class="site-main">
+{% block main %}
+
+{% endblock %}
+
   <!--================Hero Banner start =================-->
   {% block banner %}
 
@@ -56,16 +59,20 @@
   <!--================Hero Banner end =================-->
 
   <!--================ Blog slider start =================-->
-  {% block content %}
+  <section class="blog-post-area section-margin">
+    <div class="container">
+      <div class="row">
 
-  {% endblock %}
+        {% block content %}
 
-  {% block Siddebar %}
+        {% endblock %}
 
-  {% endblock %}
+        {% block Siddebar %}
 
-  </div>
-  </div>
+        {% endblock %}
+
+      </div>
+    </div>
   </section>
   <!--================ End Blog Post Area =================-->
 </main>
